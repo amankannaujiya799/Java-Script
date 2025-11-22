@@ -1,12 +1,18 @@
-console.log("Helle Aman");
-console.log("Hello Aman How are you");
+console.log("Aman.js loaded successfully!");
 let a = 10;
 let b = 20;
-if(a>b)
-{
-    console.log("A is greater than B");
+let sum = a + b;
+console.log("The sum of a and b is: " + sum);
+function greet(name) {
+    console.log("Hello, " + name + "!");
 }
-else
-{
-    console.log("B is greater than A");
-}
+greet("Aman");
+export { a, b, sum, greet };
+export default {
+    a: a,
+    b: b,
+    sum: sum,
+    greet: greet  
+};
+
+// End of Aman.js
